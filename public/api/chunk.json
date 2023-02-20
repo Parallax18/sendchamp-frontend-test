@@ -1,797 +1,303 @@
 {
   "countries": [
     {
-      "country": "afghanistan",
-      "currency": "AFN",
-      "prices": {
-        "sms": {
-          "brazil": 0.25,
-          "canada": 0.3,
-          "china": 0.2,
-          "germany": 0.35,
-          "india": 0.15,
-          "japan": 0.4,
-          "nigeria": 0.25,
-          "united_kingdom": 0.3,
-          "united_states": 0.25
+      "name": "Nigeria",
+      "currency": "Nigerian naira",
+      "currencyAbbreviation": "NGN",
+      "services": [
+        {
+          "name": "SMS",
+          "costs": [
+            {
+              "destinationCountry": "Ghana",
+              "cost": 5.5
+            },
+            {
+              "destinationCountry": "Kenya",
+              "cost": 8.3
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 10.0
+            }
+          ]
         },
-        "calls": {
-          "brazil": 1.2,
-          "canada": 1.5,
-          "china": 1.0,
-          "germany": 1.7,
-          "india": 0.8,
-          "japan": 2.0,
-          "nigeria": 1.2,
-          "united_kingdom": 1.5,
-          "united_states": 1.2
+        {
+          "name": "Call",
+          "costs": [
+            {
+              "destinationCountry": "Ghana",
+              "cost": 9.8
+            },
+            {
+              "destinationCountry": "Kenya",
+              "cost": 14.2
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 18.5
+            }
+          ]
         },
-        "email": {
-          "brazil": 0.1,
-          "canada": 0.15,
-          "china": 0.1,
-          "germany": 0.2,
-          "india": 0.05,
-          "japan": 0.25,
-          "nigeria": 0.1,
-          "united_kingdom": 0.15,
-          "united_states": 0.1
+        {
+          "name": "Email",
+          "costs": [
+            {
+              "destinationCountry": "Ghana",
+              "cost": 2.1
+            },
+            {
+              "destinationCountry": "Kenya",
+              "cost": 3.6
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 5.0
+            }
+          ]
         },
-        "otp_verification": {
-          "brazil": 0.15,
-          "canada": 0.2,
-          "china": 0.15,
-          "germany": 0.25,
-          "india": 0.1,
-          "japan": 0.3,
-          "nigeria": 0.15,
-          "united_kingdom": 0.2,
-          "united_states": 0.15
-        },
-        "whatsapp": {
-          "brazil": 0.3,
-          "canada": 0.4,
-          "china": 0.3,
-          "germany": 0.5,
-          "india": 0.2,
-          "japan": 0.6,
-          "nigeria": 0.3,
-          "united_kingdom": 0.4,
-          "united_states": 0.3
+        {
+          "name": "OTP",
+          "costs": [
+            {
+              "destinationCountry": "Ghana",
+              "cost": 6.0
+            },
+            {
+              "destinationCountry": "Kenya",
+              "cost": 9.0
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 12.0
+            }
+          ]
         }
-      }
+      ]
     },
     {
-      "country": "albania",
-      "currency": "ALL",
-      "prices": {
-        "sms": {
-          "brazil": 0.2,
-          "canada": 0.25,
-          "china": 0.15,
-          "germany": 0.3,
-          "india": 0.1,
-          "japan": 0.35,
-          "nigeria": 0.2,
-          "united_kingdom": 0.25,
-          "united_states": 0.2
+      "name": "South Africa",
+      "currency": "South African rand",
+      "currencyAbbreviation": "ZAR",
+      "services": [
+        {
+          "name": "SMS",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 1.5
+            },
+            {
+              "destinationCountry": "Kenya",
+              "cost": 3.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 4.2
+            }
+          ]
         },
-        "calls": {
-          "brazil": 1.0,
-          "canada": 1.2,
-          "china": 0.8,
-          "germany": 1.5,
-          "india": 0.7,
-          "japan": 1.8,
-          "nigeria": 1.0,
-          "united_kingdom": 1.2,
-          "united_states": 1.0
+        {
+          "name": "Call",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 3.0
+            },
+            {
+              "destinationCountry": "Kenya",
+              "cost": 6.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 8.5
+            }
+          ]
         },
-        "email": {
-          "brazil": 0.08,
-          "canada": 0.12,
-          "china": 0.08,
-          "germany": 0.16,
-          "india": 0.04,
-          "japan": 0.2,
-          "nigeria": 0.08,
-          "united_kingdom": 0.12,
-          "united_states": 0.08
+        {
+          "name": "Email",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 0.5
+            },
+            {
+              "destinationCountry": "Kenya",
+              "cost": 1.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 1.5
+            }
+          ]
         },
-        "otp_verification": {
-          "brazil": 0.12,
-          "canada": 0.16,
-          "china": 0.12,
-          "germany": 0.2,
-          "india": 0.08,
-          "japan": 0.24,
-          "nigeria": 0.12,
-          "united_kingdom": 0.16,
-          "united_states": 0.12
-        },
-        "whatsapp": {
-          "brazil": 0.24,
-          "canada": 0.32,
-          "china": 0.24,
-          "germany": 0.4,
-          "india": 0.16,
-          "japan": 0.48,
-          "nigeria": 0.24,
-          "united_kingdom": 0.32,
-          "united_states": 0.24
+        {
+          "name": "OTP",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 1.0
+            },
+            {
+              "destinationCountry": "Kenya",
+              "cost": 2.0
+            },
+            {
+              "destinationCountry": "Ghana",
+              "cost": 6.0
+            }
+          ]
         }
-      }
+      ]
     },
     {
-      "country": "australia",
-      "currency": "AUD",
-      "prices": {
-        "sms": {
-          "brazil": 0.1,
-          "canada": 0.1,
-          "china": 0.08,
-          "germany": 0.09,
-          "india": 0.22,
-          "japan": 0.12,
-          "united_kingdom": 0.1,
-          "united_states": 0.12
+      "currency": "Ghanaian cedi",
+      "currencyAbbreviation": "GHS",
+      "services": [
+        {
+          "name": "SMS",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 6.0
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 8.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 11.0
+            }
+          ]
         },
-        "call": {
-          "brazil": 0.3,
-          "canada": 0.3,
-          "china": 0.24,
-          "germany": 0.28,
-          "india": 0.66,
-          "japan": 0.36,
-          "united_kingdom": 0.2,
-          "united_states": 0.24
+        {
+          "name": "Call",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 12.0
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 16.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 22.0
+            }
+          ]
         },
-        "email": {
-          "brazil": 0.08,
-          "canada": 0.08,
-          "china": 0.06,
-          "germany": 0.07,
-          "india": 0.14,
-          "japan": 0.08,
-          "united_kingdom": 0.04,
-          "united_states": 0.06
+        {
+          "name": "Email",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 3.0
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 4.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 6.0
+            }
+          ]
         },
-        "otp_verification": {
-          "brazil": 0.1,
-          "canada": 0.1,
-          "china": 0.08,
-          "germany": 0.09,
-          "india": 0.22,
-          "japan": 0.12,
-          "united_kingdom": 0.08,
-          "united_states": 0.1
-        },
-        "whatsapp": {
-          "brazil": 0.2,
-          "canada": 0.2,
-          "china": 0.16,
-          "germany": 0.18,
-          "india": 0.44,
-          "japan": 0.24,
-          "united_kingdom": 0.2,
-          "united_states": 0.22
+        {
+          "name": "OTP",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 8.0
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 10.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 14.0
+            }
+          ]
         }
-      }
+      ]
     },
     {
-      "country": "aruba",
-      "currency": "AWG",
-      "prices": {
-        "sms": {
-          "brazil": 0.15,
-          "canada": 0.15,
-          "china": 0.12,
-          "germany": 0.13,
-          "india": 0.32,
-          "japan": 0.18,
-          "united_kingdom": 0.15,
-          "united_states": 0.18
+      "name": "Kenya",
+      "currency": "Kenyan shilling",
+      "currencyAbbreviation": "KES",
+      "services": [
+        {
+          "name": "SMS",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 10.0
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 14.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 6.0
+            }
+          ]
         },
-        "call": {
-          "brazil": 0.45,
-          "canada": 0.45,
-          "china": 0.36,
-          "germany": 0.39,
-          "india": 0.96,
-          "japan": 0.54,
-          "united_kingdom": 0.45,
-          "united_states": 0.54
+        {
+          "name": "Call",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 20.0
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 28.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 12.0
+            }
+          ]
         },
-        "email": {
-          "brazil": 0.12,
-          "canada": 0.12,
-          "china": 0.09,
-          "germany": 0.1,
-          "india": 0.24,
-          "japan": 0.14,
-          "united_kingdom": 0.12,
-          "united_states": 0.14
+        {
+          "name": "Email",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 4.0
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 6.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 2.0
+            }
+          ]
         },
-        "otp_verification": {
-          "brazil": 0.15,
-          "canada": 0.15,
-          "china": 0.12,
-          "germany": 0.13,
-          "india": 0.32,
-          "japan": 0.18,
-          "united_kingdom": 0.15,
-          "united_states": 0.18
-        },
-        "whatsapp": {
-          "brazil": 0.3,
-          "canada": 0.3,
-          "china": 0.24,
-          "germany": 0.26,
-          "india": 0.64,
-          "japan": 0.36,
-          "united_kingdom": 0.3,
-          "united_states": 0.36
+        {
+          "name": "OTP",
+          "costs": [
+            {
+              "destinationCountry": "Nigeria",
+              "cost": 12.0
+            },
+            {
+              "destinationCountry": "South Africa",
+              "cost": 18.0
+            },
+            {
+              "destinationCountry": "Tanzania",
+              "cost": 8.0
+            }
+          ]
         }
-      }
-    },
-    {
-      "country": "angola",
-      "currency": "AOA",
-      "prices": {
-        "sms": {
-          "brazil": 0.25,
-          "canada": 0.25,
-          "china": 0.2,
-          "germany": 0.22,
-          "india": 0.52,
-          "japan": 0.3,
-          "united_kingdom": 0.25,
-          "united_states": 0.3
-        },
-        "call": {
-          "brazil": 0.75,
-          "canada": 0.75,
-          "china": 0.6,
-          "germany": 0.66,
-          "india": 1.56,
-          "japan": 0.9,
-          "united_kingdom": 0.75,
-          "united_states": 0.9
-        },
-        "email": {
-          "argentina": 0.08,
-          "canada": 0.12,
-          "china": 0.08,
-          "germany": 0.16,
-          "india": 0.04,
-          "japan": 0.2,
-          "nigeria": 0.08,
-          "united_kingdom": 0.12,
-          "united_states": 0.08
-        },
-        "otp_verification": {
-          "argentina": 0.12,
-          "canada": 0.16,
-          "china": 0.12,
-          "germany": 0.2,
-          "india": 0.08,
-          "japan": 0.24,
-          "nigeria": 0.12,
-          "united_kingdom": 0.16,
-          "united_states": 0.12
-        },
-        "whatsapp": {
-          "argentina": 0.24,
-          "canada": 0.32,
-          "china": 0.24,
-          "germany": 0.4,
-          "india": 0.16,
-          "japan": 0.48,
-          "nigeria": 0.24,
-          "united_kingdom": 0.32,
-          "united_states": 0.24
-        }
-      }
-    },
-    {
-      "country": "brazil",
-      "currency": "BRL",
-      "prices": {
-        "sms": {
-          "argentina": 0.2,
-          "canada": 0.28,
-          "china": 0.2,
-          "germany": 0.32,
-          "india": 0.12,
-          "japan": 0.36,
-          "nigeria": 0.2,
-          "united_kingdom": 0.28,
-          "united_states": 0.2
-        },
-        "call": {
-          "argentina": 0.5,
-          "canada": 0.7,
-          "china": 0.5,
-          "germany": 0.8,
-          "india": 0.3,
-          "japan": 0.9,
-          "nigeria": 0.5,
-          "united_kingdom": 0.7,
-          "united_states": 0.5
-        },
-        "email": {
-          "argentina": 0.08,
-          "canada": 0.12,
-          "china": 0.08,
-          "germany": 0.16,
-          "india": 0.04,
-          "japan": 0.2,
-          "nigeria": 0.08,
-          "united_kingdom": 0.12,
-          "united_states": 0.08
-        },
-        "otp_verification": {
-          "argentina": 0.12,
-          "canada": 0.16,
-          "china": 0.12,
-          "germany": 0.2,
-          "india": 0.08,
-          "japan": 0.24,
-          "nigeria": 0.12,
-          "united_kingdom": 0.16,
-          "united_states": 0.12
-        },
-        "whatsapp": {
-          "argentina": 0.24,
-          "canada": 0.32,
-          "china": 0.24,
-          "germany": 0.4,
-          "india": 0.16,
-          "japan": 0.48,
-          "nigeria": 0.24,
-          "united_kingdom": 0.32,
-          "united_states": 0.24
-        }
-      }
-    },
-
-    {
-      "country": "canada",
-      "currency": "CAD",
-      "prices": {
-        "sms": {
-          "brazil": 0.28,
-          "china": 0.28,
-          "germany": 0.44,
-          "india": 0.16,
-          "japan": 0.48,
-          "nigeria": 0.28,
-          "united_kingdom": 0.36,
-          "united_states": 0.28
-        },
-        "call": {
-          "brazil": 0.7,
-          "china": 0.7,
-          "germany": 1.1,
-          "india": 0.4,
-          "japan": 1.2,
-          "nigeria": 0.7,
-          "united_kingdom": 0.9,
-          "united_states": 0.7
-        },
-        "email": {
-          "brazil": 0.12,
-          "china": 0.12,
-          "germany": 0.2,
-          "india": 0.08,
-          "japan": 0.24,
-          "nigeria": 0.12,
-          "united_kingdom": 0.16,
-          "united_states": 0.12
-        },
-        "otp_verification": {
-          "brazil": 0.16,
-          "china": 0.16,
-          "germany": 0.24,
-          "india": 0.12,
-          "japan": 0.32,
-          "nigeria": 0.16,
-          "united_kingdom": 0.2,
-          "united_states": 0.16
-        },
-        "whatsapp": {
-          "brazil": 0.32,
-          "china": 0.32,
-          "germany": 0.48,
-          "india": 0.24,
-          "japan": 0.64,
-          "nigeria": 0.32,
-          "united_kingdom": 0.4,
-          "united_states": 0.32
-        }
-      }
-    },
-    {
-      "country": "china",
-      "currency": "CNY",
-      "prices": {
-        "sms": {
-          "brazil": 0.2,
-          "canada": 0.28,
-          "germany": 0.16,
-          "india": 0.08,
-          "japan": 0.24,
-          "nigeria": 0.2,
-          "united_kingdom": 0.2,
-          "united_states": 0.2
-        },
-        "call": {
-          "brazil": 0.5,
-          "canada": 0.7,
-          "germany": 0.4,
-          "india": 0.2,
-          "japan": 0.6,
-          "nigeria": 0.5,
-          "united_kingdom": 0.5,
-          "united_states": 0.5
-        },
-        "email": {
-          "brazil": 0.08,
-          "canada": 0.12,
-          "germany": 0.08,
-          "india": 0.04,
-          "japan": 0.12,
-          "nigeria": 0.08,
-          "united_kingdom": 0.08,
-          "united_states": 0.08
-        },
-        "otp_verification": {
-          "brazil": 0.12,
-          "canada": 0.16,
-          "germany": 0.12,
-          "india": 0.08,
-          "japan": 0.2,
-          "nigeria": 0.12,
-          "united_kingdom": 0.12,
-          "united_states": 0.12
-        },
-        "whatsapp": {
-          "brazil": 0.24,
-          "canada": 0.32,
-          "germany": 0.24,
-          "india": 0.16,
-          "japan": 0.4,
-          "nigeria": 0.24,
-          "united_kingdom": 0.24,
-          "united_states": 0.24
-        }
-      }
-    },
-    {
-      "country": "germany",
-      "currency": "EUR",
-      "prices": {
-        "sms": {
-          "brazil": 0.44,
-          "canada": 0.52,
-          "china": 0.28,
-          "india": 0.2,
-          "japan": 0.6,
-          "nigeria": 0.44,
-          "united_kingdom": 0.24,
-          "united_states": 0.44
-        },
-        "call": {
-          "brazil": 1.1,
-          "canada": 1.3,
-          "china": 0.7,
-          "india": 0.5,
-          "japan": 1.5,
-          "nigeria": 1.1,
-          "united_kingdom": 0.6,
-          "united_states": 1.1
-        },
-        "email": {
-          "brazil": 0.2,
-          "canada": 0.24,
-          "china": 0.12,
-          "india": 0.08,
-          "japan": 0.28,
-          "nigeria": 0.2,
-          "united_kingdom": 0.12,
-          "united_states": 0.2
-        },
-        "otp_verification": {
-          "brazil": 0.3,
-          "canada": 0.36,
-          "china": 0.2,
-          "india": 0.14,
-          "japan": 0.42,
-          "nigeria": 0.3,
-          "united_kingdom": 0.18,
-          "united_states": 0.3
-        },
-        "whatsapp": {
-          "brazil": 0.6,
-          "canada": 0.72,
-          "china": 0.4,
-          "india": 0.28,
-          "japan": 0.84,
-          "nigeria": 0.6,
-          "united_kingdom": 0.36,
-          "united_states": 0.6
-        }
-      }
-    },
-    {
-      "country": "india",
-      "currency": "INR",
-      "prices": {
-        "sms": {
-          "brazil": 7.0,
-          "canada": 8.0,
-          "china": 4.0,
-          "germany": 6.0,
-          "japan": 12.0,
-          "nigeria": 7.0,
-          "united_kingdom": 4.0,
-          "united_states": 7.0
-        },
-        "call": {
-          "brazil": 20.0,
-          "canada": 23.0,
-          "china": 12.0,
-          "germany": 18.0,
-          "japan": 36.0,
-          "nigeria": 20.0,
-          "united_kingdom": 12.0,
-          "united_states": 20.0
-        },
-        "email": {
-          "brazil": 3.5,
-          "canada": 4.0,
-          "china": 2.0,
-          "germany": 3.0,
-          "japan": 6.0,
-          "nigeria": 3.5,
-          "united_kingdom": 2.0,
-          "united_states": 3.5
-        },
-        "otp_verification": {
-          "brazil": 2.5,
-          "canada": 3.0,
-          "china": 1.5,
-          "germany": 2.0,
-          "japan": 4.0,
-          "nigeria": 2.5,
-          "united_kingdom": 1.5,
-          "united_states": 2.5
-        },
-        "whatsapp": {
-          "brazil": 5.0,
-          "canada": 6.0,
-          "china": 3.0,
-          "germany": 4.0,
-          "japan": 8.0,
-          "nigeria": 5.0,
-          "united_kingdom": 3.0,
-          "united_states": 5.0
-        }
-      }
-    },
-    {
-      "country": "japan",
-      "currency": "JPY",
-      "prices": {
-        "sms": {
-          "brazil": 45.0,
-          "canada": 52.0,
-          "china": 28.0,
-          "germany": 40.0,
-          "india": 120.0,
-          "nigeria": 45.0,
-          "united_kingdom": 28.0,
-          "united_states": 45.0
-        },
-        "call": {
-          "brazil": 120.0,
-          "canada": 138.0,
-          "china": 72.0,
-          "germany": 102.0,
-          "india": 306.0,
-          "nigeria": 120.0,
-          "united_kingdom": 72.0,
-          "united_states": 120.0
-        },
-        "email": {
-          "brazil": 20.0,
-          "canada": 23.0,
-          "china": 12.0,
-          "germany": 18.0,
-          "india": 54.0,
-          "nigeria": 20.0,
-          "united_kingdom": 12.0,
-          "united_states": 20.0
-        },
-        "otp_verification": {
-          "brazil": 8.0,
-          "canada": 9.0,
-          "china": 5.0,
-          "germany": 7.0,
-          "india": 21.0,
-          "nigeria": 8.0,
-          "united_kingdom": 5.0,
-          "united_states": 8.0
-        },
-        "whatsapp": {
-          "brazil": 16.0,
-          "canada": 18.0,
-          "china": 10.0,
-          "germany": 14.0,
-          "india": 42.0,
-          "nigeria": 16.0,
-          "united_kingdom": 10.0,
-          "united_states": 16.0
-        }
-      }
-    },
-    {
-      "country": "nigeria",
-      "currency": "NGN",
-      "prices": {
-        "sms": {
-          "brazil": 350.0,
-          "canada": 420.0,
-          "china": 225.0,
-          "germany": 320.0,
-          "india": 960.0,
-          "japan": 400.0,
-          "united_kingdom": 225.0,
-          "united_states": 350.0
-        },
-        "call": {
-          "brazil": 900.0,
-          "canada": 1080.0,
-          "china": 570.0,
-          "germany": 810.0,
-          "india": 2430.0,
-          "japan": 1000.0,
-          "united_kingdom": 570.0,
-          "united_states": 900.0
-        },
-        "email": {
-          "brazil": 150.0,
-          "canada": 180.0,
-          "china": 95.0,
-          "germany": 135.0,
-          "india": 405.0,
-          "japan": 200.0,
-          "united_kingdom": 95.0,
-          "united_states": 150.0
-        },
-        "otp_verification": {
-          "brazil": 50.0,
-          "canada": 60.0,
-          "china": 32.0,
-          "germany": 45.0,
-          "india": 135.0,
-          "japan": 70.0,
-          "united_kingdom": 32.0,
-          "united_states": 50.0
-        },
-        "whatsapp": {
-          "brazil": 100.0,
-          "canada": 120.0,
-          "china": 64.0,
-          "germany": 90.0,
-          "india": 270.0,
-          "japan": 140.0,
-          "united_kingdom": 64.0,
-          "united_states": 100.0
-        }
-      }
-    },
-    {
-      "country": "united kingdom",
-      "currency": "GBP",
-      "prices": {
-        "sms": {
-          "brazil": 0.02,
-          "canada": 0.02,
-          "china": 0.01,
-          "germany": 0.015,
-          "india": 0.03,
-          "nigeria": 0.01,
-          "united_states": 0.02
-        },
-        "call": {
-          "brazil": 0.06,
-          "canada": 0.06,
-          "china": 0.04,
-          "germany": 0.05,
-          "india": 0.12,
-          "nigeria": 0.04,
-          "united_states": 0.06
-        },
-        "email": {
-          "brazil": 0.01,
-          "canada": 0.01,
-          "china": 0.007,
-          "germany": 0.008,
-          "india": 0.015,
-          "nigeria": 0.007,
-          "united_states": 0.01
-        },
-        "otp_verification": {
-          "brazil": 0.03,
-          "canada": 0.03,
-          "china": 0.02,
-          "germany": 0.025,
-          "india": 0.05,
-          "nigeria": 0.02,
-          "united_states": 0.03
-        },
-        "whatsapp": {
-          "brazil": 0.06,
-          "canada": 0.06,
-          "china": 0.04,
-          "germany": 0.05,
-          "india": 0.12,
-          "nigeria": 0.04,
-          "united_states": 0.06
-        }
-      }
-    },
-    {
-      "country": "united states",
-      "currency": "USD",
-      "prices": {
-        "sms": {
-          "brazil": 0.03,
-          "canada": 0.03,
-          "china": 0.02,
-          "germany": 0.025,
-          "india": 0.05,
-          "japan": 0.03,
-          "united_kingdom": 0.02
-        },
-        "call": {
-          "brazil": 0.1,
-          "canada": 0.1,
-          "china": 0.07,
-          "germany": 0.09,
-          "india": 0.22,
-          "japan": 0.12,
-          "united_kingdom": 0.1
-        },
-        "email": {
-          "brazil": 0.02,
-          "canada": 0.02,
-          "china": 0.015,
-          "germany": 0.02,
-          "india": 0.03,
-          "japan": 0.02,
-          "united_kingdom": 0.02
-        },
-        "otp_verification": {
-          "brazil": 0.05,
-          "canada": 0.05,
-          "china": 0.03,
-          "germany": 0.04,
-          "india": 0.08,
-          "japan": 0.05,
-          "united_kingdom": 0.03
-        },
-        "whatsapp": {
-          "brazil": 0.1,
-          "canada": 0.1,
-          "china": 0.07,
-          "germany": 0.09,
-          "india": 0.22,
-          "japan": 0.12,
-          "united_kingdom": 0.1
-        }
-      }
+      ]
     }
   ]
 }

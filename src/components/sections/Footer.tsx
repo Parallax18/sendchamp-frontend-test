@@ -59,7 +59,8 @@ const Footer = () => {
   return (
     <Box px={mediaWidth > 1440 ? 16 : 0} w={'full'}>
       <VStack
-        p={[10, 32]}
+        px={[10, 32]}
+        py={16}
         spacing={16}
         bg={'brand.dark'}
         flexDirection={'column'}

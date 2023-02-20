@@ -15,13 +15,10 @@ import { BsDash } from 'react-icons/bs';
 const DropDownSelect = ({
   options,
   withCurr,
-}: // onSelect,
-{
+}: {
   options?: any[];
   withCurr?: boolean;
-  onSelect?: () => void;
 }) => {
-  // console.log({ options });
   const { isOpen, onToggle, onClose } = useDisclosure();
 
   const ref = React.useRef<HTMLDivElement>(null);
@@ -79,30 +76,25 @@ const DropDownSelect = ({
             height={'15rem'}
             overflowY={'scroll'}
           >
-            {options === undefined ? (
-              <Box p={3} bg={'brand.outline'} />
-            ) : (
-              options.map((option) => (
-                <Box
-                  key={option.country}
-                  p={3}
-                  _hover={{ bg: 'brand.outline' }}
-                  cursor={'pointer'}
-
-                  // onClick={() => onSelect(option)}
-                >
-                  <Flex alignItems={'center'}>
-                    <Text textTransform={'capitalize'}>{option.country}</Text>
-                    {withCurr && (
-                      <>
-                        <BsDash />
-                        <Text>{option.currency}</Text>
-                      </>
-                    )}
-                  </Flex>
-                </Box>
-              ))
-            )}
+            {options?.map((country) => (
+              <Box
+                key={country.id}
+                p={3}
+                _hover={{ bg: 'brand.outline' }}
+                cursor={'pointer'}
+                // onClick={() => onSelect(country.id)}
+              >
+                <Flex alignItems={'center'}>
+                  <Text textTransform={'capitalize'}>{country.name}</Text>
+                  {withCurr && (
+                    <>
+                      <BsDash />
+                      <Text>{country.currency_abbreviation}</Text>
+                    </>
+                  )}
+                </Flex>
+              </Box>
+            ))}
           </Stack>
         </Box>
       </ScaleFade>

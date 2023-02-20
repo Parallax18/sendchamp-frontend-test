@@ -1,3 +1,3 @@
 export const ApiEndpoints = {
-  prices: 'api/chunk.json',
+  prices: 'api/pricing-data.json',
 };

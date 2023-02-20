@@ -2,10 +2,15 @@ import { Box, Center, HStack, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 import DropDownSelect from '@/components/general/DropDownSelect';
+import usePrices from '@/services/hooks/use-prices';
 import useMediaWidth from '@/utils/use-media-width';
 
 const Header = () => {
   const { mediaWidth } = useMediaWidth();
+  // const [pricingData] = useRecoilState(pricingAtom);
+  const { useGetPrices } = usePrices();
+  const { data } = useGetPrices();
+
   return (
     <Box mx={mediaWidth > 1440 ? 16 : 0} px={5} bg={'brand.pale'} py={20}>
       <Center flexDirection={'column'} h={'full'}>
@@ -29,21 +34,10 @@ const Header = () => {
           justifyContent={'center'}
           spacing={[0, 4]}
           mt={20}
-          className={'space-y-2'}
+          className={'space-y-2 md:space-y-0'}
         >
-          <DropDownSelect
-          // options={countries}
-          // onSelect={(country) =>
-          //   setPricingData({ ...pricingData, receivingCountry: country })
-          // }
-          />
-          <DropDownSelect
-            // options={countries}
-            // onSelect={(country) =>
-            //   setPricingData({ ...pricingData, sendingCountry: country })
-            // }
-            withCurr
-          />
+          <DropDownSelect options={data?.countries} />
+          <DropDownSelect options={data?.countries} withCurr />
         </HStack>
       </Center>
     </Box>

@@ -1,10 +1,9 @@
-import { Box, SimpleGrid } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
+import { Box, SimpleGrid, Spinner, Text, VStack } from '@chakra-ui/react';
+import { useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 
 import {
   MailIcon,
-  SmsIcon,
   VerificationIcon,
   VoiceIcon,
   WhatsAppIcon,
@@ -21,61 +20,35 @@ import useMediaWidth from '@/utils/use-media-width';
 const Index = () => {
   const { padding } = useMediaWidth();
   const { useGetPrices } = usePrices();
-  const [countries, setCountries] = useState();
-  const [pricingData] = useRecoilState(pricingAtom);
+
+  const [pricingData, setPricingData] = useRecoilState(pricingAtom);
 
   const { data, isLoading } = useGetPrices();
 
   useEffect(() => {
-    console.log({ data });
-    // setCountries([data]);
     if (data) {
       // @ts-ignore
-      setCountries(data.countries);
-      console.log({ countries });
+      setPricingData({ ...pricingData, countries: data.countries });
     }
-    // setCountriesWithCurrency();
   }, [isLoading, data]);
 
-  useEffect(() => {
-    console.log({ pricingData });
-  }, [pricingData]);
-
   return (
-    <Main meta={<Meta title="SendChamp | pricing" description=" bob's " />}>
-      {/* {data && ( */}
-      {/*  <HStack justifyContent={'center'} spacing={4}> */}
-      {/*    <DropDownSelect */}
-      {/*      options={countries} */}
-      {/*      onSelect={(country) => */}
-      {/*        setPricingData({ ...pricingData, receivingCountry: country }) */}
-      {/*      } */}
-      {/*    /> */}
-      {/*    <DropDownSelect */}
-      {/*      options={countries} */}
-      {/*      onSelect={(country) => */}
-      {/*        setPricingData({ ...pricingData, sendingCountry: country }) */}
-      {/*      } */}
-      {/*      withCurr */}
-      {/*    /> */}
-      {/*  </HStack> */}
-      {/* )} */}
-      <Box px={padding} transform={'auto'} translateY={[0, '-10%']}>
-        <SimpleGrid columns={[1, 3]} spacing={10}>
-          <PricingCard
-            Icon={SmsIcon}
-            // price={
-            //   pricingData?.receivingCountry?.prices.sms[
-            //     pricingData?.sendingCountry?.country
-            //   ]
-            // }
-          />
-          <PricingCard Icon={VoiceIcon} />
-          <PricingCard Icon={MailIcon} />
-          <PricingCard Icon={WhatsAppIcon} />
-          <PricingCard Icon={VerificationIcon} />
-        </SimpleGrid>
-      </Box>
+    <Main meta={<Meta title="SendChamp | pricing" description=" sendchamp " />}>
+      {isLoading ? (
+        <VStack>
+          <Spinner color={'brand.primary'} />
+          <Text>Fetching...</Text>
+        </VStack>
+      ) : (
+        <Box px={padding} transform={'auto'} translateY={[0, '-10%']}>
+          <SimpleGrid columns={[1, 3]} spacing={10}>
+            <PricingCard Icon={VoiceIcon} />
+            <PricingCard Icon={MailIcon} />
+            <PricingCard Icon={WhatsAppIcon} />
+            <PricingCard Icon={VerificationIcon} />
+          </SimpleGrid>
+        </Box>
+      )}
 
       <Apply />
       <Communication />
