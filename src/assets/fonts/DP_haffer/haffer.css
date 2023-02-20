@@ -1,0 +1,22 @@
+@font-face{
+  font-family: 'haffer';
+  src: url('HafferSQTRIAL-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'haffer';
+  src: url('HafferTRIAL-Medium.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'haffer';
+  src: url('HafferTRIAL-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
