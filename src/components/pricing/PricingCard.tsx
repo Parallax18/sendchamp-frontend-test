@@ -1,6 +1,9 @@
 import { Box, Flex, HStack, Stack, Text, VStack } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import React from 'react';
+import { useSetRecoilState } from 'recoil';
+
+import modalAtom from '@/recoil/atoms/modalAtom';
 
 const PricingCard = ({
   Icon,
@@ -17,6 +20,16 @@ const PricingCard = ({
   receiving_price?: string;
   unit: string;
 }) => {
+  const setModalState = useSetRecoilState(modalAtom);
+  const modalProps = {
+    Icon,
+    type,
+    sending_price,
+    receiving_price,
+    unit,
+    subtext,
+  };
+
   return (
     <Box
       bg={'#fff'}
@@ -31,10 +44,15 @@ const PricingCard = ({
     >
       <Box p={8}>
         <Stack spacing={4}>
-          <Box rounded={'lg'} bg={'brand.primary'} p={3} w="max">
+          <Box rounded={'lg'} bg={'brand.primary'} p={4} w="max">
             <Icon />
           </Box>
-          <Text fontFamily="haffer" color={'brand.black'} fontWeight={'bold'}>
+          <Text
+            fontFamily="haffer"
+            color={'brand.black'}
+            fontWeight={'bold'}
+            fontSize={'xl'}
+          >
             {type}
           </Text>
         </Stack>
@@ -79,29 +97,29 @@ const PricingCard = ({
         </HStack>
       </Box>
 
-      {type === 'SMS' ||
-        ('Whatsapp' && (
-          <Flex
-            borderTop={'1px solid'}
-            borderColor={'brand.outline'}
-            justifyContent={'center'}
-            alignItems={'center'}
-            roundedBottom={'lg'}
-            _hover={{ bg: '#daf3ff' }}
-            p={7}
-            cursor="pointer"
+      {(type === 'SMS' || type === 'Whatsapp') && (
+        <Flex
+          borderTop={'1px solid'}
+          borderColor={'brand.outline'}
+          justifyContent={'center'}
+          alignItems={'center'}
+          roundedBottom={'lg'}
+          _hover={{ bg: '#daf3ff' }}
+          p={7}
+          cursor="pointer"
+          onClick={() => setModalState({ isOpen: true, modalProps })}
+        >
+          <Text
+            textDecor={'underline'}
+            fontWeight={'normal'}
+            fontFamily={'haffer'}
+            fontSize={'lg'}
+            color={'brand.link'}
           >
-            <Text
-              textDecor={'underline'}
-              fontWeight={'normal'}
-              fontFamily={'haffer'}
-              fontSize={'lg'}
-              color={'brand.link'}
-            >
-              More details
-            </Text>
-          </Flex>
-        ))}
+            More details
+          </Text>
+        </Flex>
+      )}
     </Box>
   );
 };

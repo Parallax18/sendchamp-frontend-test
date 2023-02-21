@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
 import { RecoilRoot } from 'recoil';
 
+import ManagedModal from '@/components/general/ManagedModal';
 import { theme } from '@/components/themed/chakra.theme';
 
 const queryClient = new QueryClient();
@@ -15,6 +16,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     <ChakraProvider theme={theme}>
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
+        <ManagedModal />
       </QueryClientProvider>
     </ChakraProvider>
   </RecoilRoot>
